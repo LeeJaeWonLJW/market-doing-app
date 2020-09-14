@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/favorit_mu"
+        android:title="찜한 가게"
+        android:icon="@drawable/ic_iconmonstr_heart_thin"
+        />
+    <item
+        android:id="@+id/home_mu"
+        android:icon="@drawable/ic_iconmonstr_home_9"
+        android:title="홈" />
+    <item
+        android:id="@+id/MyMerchant_mu"
+        android:icon="@drawable/ic_iconmonstr_shop_3"
+        android:title="My 시장" />
+    <item
+        android:id="@+id/MyOrder_mu"
+        android:icon="@drawable/ic_iconmonstr_shopping_cart_2"
+        android:title="주문내역" />
+</menu>

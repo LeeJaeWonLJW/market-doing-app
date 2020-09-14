@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxHeight="60dp">
+
+    <TextView
+        android:id="@+id/celler_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="정동 대전청과 중도매인 ***번"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cell_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="75dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/upbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celler_title" />
+
+    <Button
+        android:id="@+id/upbtn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:text="▲"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toStartOf="@+id/product_count"
+        app:layout_constraintStart_toEndOf="@+id/cell_product"
+        app:layout_constraintTop_toBottomOf="@+id/celler_title" />
+
+    <Button
+        android:id="@+id/downbtn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="24dp"
+        android:text="▼"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/product_count"
+        app:layout_constraintTop_toBottomOf="@+id/celler_title" />
+
+    <TextView
+        android:id="@+id/product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/downbtn"
+        app:layout_constraintStart_toEndOf="@+id/upbtn"
+        app:layout_constraintTop_toBottomOf="@+id/celler_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>
